@@ -1,0 +1,12 @@
+body{
+    background: hsla(331, 78%, 69%, 1);
+    background: linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 40px;
+    color: white;
+}
