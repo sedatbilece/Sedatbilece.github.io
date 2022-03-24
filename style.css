@@ -1,13 +1,63 @@
-body{
-    background: hsla(331, 78%, 69%, 1);
-    background: linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
 
-    position: relative;
+body{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.bar{
+    background-color: white;
     display: flex;
-    align-items: center;
+    
+    border-radius: 20px;
+    margin: 5px;
+    height: 20vh;
     justify-content: center;
-    height: 100vh;
-    font-size: 40px;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+.container{
+    display: flex;
+    width: 95vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    
+    
+}
+
+.left{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+margin: 10px;
+width: 45vw;
+
+
+}
+.right{
+    background-color: white;
+    border-radius: 20px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+margin: 10px;
+width: 45vw;
+}
+.miniblock{
+    border-radius: 20px;
+background-color: beige;
+
+margin: 10px;
+padding: 20px;
+width: 15vw;
+height: 15vh;
+justify-content: center;
+align-items: center;
+display: flex   ;
+
+
 }
