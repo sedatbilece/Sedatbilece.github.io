@@ -54,7 +54,12 @@ body{
   display: flex;
   justify-content: center;
   color: white;
-  flex-direction: row;
+  flex-direction: column;
+}
+.aciklama{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+ 
 }
 
 li { 
