@@ -114,8 +114,8 @@ li {
 @media(max-width:570px) {
 
   .container{
-      width: 100vw;
-     margin-left: 50px;
+      width: 90vw;
+     margin-left: 40px;
   }
   .panel.active{
     flex:2;
