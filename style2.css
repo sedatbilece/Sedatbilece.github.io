@@ -109,6 +109,8 @@ a:hover {
     }
     #modebut:active{
       background-color: #cbcacc;
+      transform: scale(0.90);
+      transition: transform ease-in-out;
     }
   
     .a {
