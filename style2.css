@@ -1,13 +1,14 @@
+/* html içindeki default margin sıfırlandı*/
 * {
     margin: 0px;
     
 }
 body{
-    
+
     background-color: #000;
     background-size:contain;
 }
-
+/* Geri dönüş  ve switch mode için navbar  */
 .navbar {
   font-family: 'Roboto',sans-serif;
     width: 100%;
@@ -18,7 +19,7 @@ body{
     justify-content:space-around;
     align-items: center;
 }
-
+/* geri dön tagi */
 a {
     color: white;
     text-decoration: none;
@@ -29,6 +30,7 @@ a:hover {
     transform: scale(1.1);
     transition: transform ease-in-out;
 }
+/* ana gövde ayarları ve grid yapısının ortalanması */
 .main{
     margin-top: 20px;
     display: flex;
@@ -36,7 +38,7 @@ a:hover {
     align-items: center;
 }
 
-  
+  /*  Grid yapımız */
   .wrapper {
       display: grid;
       grid-gap: 20px;
@@ -47,6 +49,7 @@ a:hover {
     }
   
     .box {
+     
       background-color: rgba(0, 0, 0, 0.5);
       color: #fff;
       border-radius: 5px;
@@ -56,63 +59,6 @@ a:hover {
       flex-direction: column;
   
     }
-    .box2{
-
-      background-color: rgb(255, 255, 255);
-      color: black;
-      border-radius: 5px;
-      padding: 20px;
-      font-size: 150%;
-      display: flex;
-      flex-direction: column;
-
-    }
-    .title{
-      border-bottom: 2px solid #330867;
-      text-align: center;
-      font-size: 30px;
-    }
-    .eltitle{
-      font-size: 26px;
-      color: #30CFD0;
-      
-    }
-    .eltitle2{
-      font-size: 26px;
-      color: #330867;
-      
-    }
-    .eltitlea{
-      color: #30CFD0;
-    }
-    .eltitlea2{
-      color: #330867;
-    }
-    .eltitle a:hover{
-      color: wheat;
-    }
-    
-    .element{
-      margin-top: 15px;
-      border-bottom: 2px solid #30CFD0;
-      padding :5px;
-      
-    }
-    #mode{
-      width: 20px;
-    }
-    #modebut{
-      background-color: white;
-      border-radius: 40%;
-      border: none;
-      
-    }
-    #modebut:active{
-      background-color: #cbcacc;
-      transform: scale(0.90);
-      transition: transform ease-in-out;
-    }
-  
     .a {
       grid-column: 1 / 3;
       grid-row: 1;
@@ -130,6 +76,77 @@ a:hover {
       grid-row: 2;
     }
 
+    /* Box içindeki elemanlar */
+    .title{
+      border-bottom: 2px solid #330867;
+      text-align: center;
+      font-size: 30px;
+    }
+    .eltitle{
+      font-size: 26px;
+      color: #30CFD0;
+      
+    }
+    
+    .eltitlea{
+      
+      color: #30CFD0;
+    }
+    
+    .eltitle a:hover{
+      color: wheat;
+    }
+    .text{
+      font-family: 'KoHo', sans-serif;
+      font-size: 20px;
+    }
+    
+    .element{
+      margin-top: 15px;
+      border-bottom: 2px solid #30CFD0;
+      padding :5px;
+      
+    }
+
+    /* Aydınlık Karanlık mod arası geçiş css */
+    #mode{
+      width: 20px;
+    }
+    #modebut{
+      background-color: white;
+      border-radius: 40%;
+      border: none;
+      
+    }
+    #modebut:active{
+      background-color: #cbcacc;
+      transform: scale(0.90);
+      transition: transform ease-in-out;
+    }
+    .eltitlea2{
+      color: #330867;
+    }
+    .eltitle2{
+      font-size: 26px;
+      color: #330867;
+      
+    }
+    .box2{
+
+      background-color: rgb(255, 255, 255);
+      color: black;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      display: flex;
+      flex-direction: column;
+
+    }
+  
+   /* 570 PX ort mobile ölçüsü
+   
+   Grid yapısından flex yapısına yani alt alta gelen boxlara geçiliyor
+   */
     @media(max-width:570px) {
 
      .wrapper{
